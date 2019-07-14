@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascripts 30 Experiments</title>
+    <style>
+      body {
+        color: #333333;
+        padding: 0;
+        margin: 0;
+        font-family: Georgia, Helvetica, Arial;
+      }
+      header, main {
+        width: 100%;
+        margin: auto;
+      }
+      header {
+        margin-bottom: 4rem;
+      }
+      header > h1 {
+        font-size: 2.5rem;
+      }
+      ul.menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      ul.menu li > a {
+        display: inline-block;
+        position: relative;
+        padding: 0.5rem 1rem 1rem;
+        padding-left: 0;
+        font-size: 1.5rem;
+        text-decoration: none;
+      }
+      ul.menu li > a,
+      ul.menu li > a:hover,
+      ul.menu li > a:visited,
+      ul.menu li > a:active,
+      ul.menu li > a:focus {
+        color: #2d3436;
+      }
+      ul.menu li > a:hover::after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        width: 95%;
+        height: 70%;
+        background: #ffeaa7;
+        z-index: -1;
+      }
+
+      @media (min-width: 640px) {
+        header, main {
+          width: 640px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Javascript 30 Experiments</h1>
+    </header>
+    <main>
+      <ul class="menu">
+        <li>
+          <a href="./1-drum-kit" alt="Day 1: Drum Kit">Day 1: Drum Kit</a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
+
